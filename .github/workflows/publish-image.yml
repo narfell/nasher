@@ -40,3 +40,5 @@ jobs:
           tags: |
             narfell/nasher:latest
             narfell/nasher:${{ github.event.inputs.nwn_assets }}_${{ github.event.inputs.nasher_version }}
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.PACKAGE_PAT }}
