@@ -1,4 +1,6 @@
-FROM ghcr.io/urothis/nwserver:8193.35 as nwnassets
+ARG NWN_ASSETS="8193.35"
+
+FROM ghcr.io/urothis/nwserver:$NWN_ASSETS as nwnassets
 
 FROM alpine:latest as downloader
 
