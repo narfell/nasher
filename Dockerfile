@@ -31,7 +31,7 @@ RUN curl \
 
 FROM --platform=linux/amd64 ubuntu:23.10
 
-ARG NASHER_USER_ID=1000
+ARG NASHER_USER_ID=1002
 
 COPY --from=nwnassets /nwn /nwn
 COPY --from=downloader /binaries/* /usr/local/bin/
