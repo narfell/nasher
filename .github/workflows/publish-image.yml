@@ -34,7 +34,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          build-args:
+          build-args: |
             NWN_ASSETS=${{ github.event.inputs.nwn_assets }}
             NASHER_RELEASE=${{ github.event.inputs.nasher_version }}
           tags: |
