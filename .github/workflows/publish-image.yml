@@ -48,7 +48,8 @@ jobs:
           build-args: |
             NWN_ASSETS=${{ github.event.inputs.nwn_assets }}
             NASHER_RELEASE=${{ github.event.inputs.nasher_version }}
-            NWNSC_RELEASE=${{ github.event.inputs.nasher_version }}
+            NWNSC_RELEASE=${{ github.event.inputs.nwnsc_version }}
+            NEVERWINTER_NIM_RELEASE=${{ github.event.input.nwnim_assets }}
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.event.inputs.nwn_assets }}_${{ github.event.inputs.nasher_version }}_${{ github.event.inputs.nwnsc_version }}_${{ github.event.inputs.nwnim_assets }}
